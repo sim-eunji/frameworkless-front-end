@@ -38,4 +38,4 @@
 
 이를 바탕으로 뷰를 좀 더 작은 함수로 나누고 일관성 있게 작업해보자. 
 
-[TodoMVC v2 파트로 이동 ...]()
+[TodoMVC v2 파트로 이동 ...](https://github.com/sim-eunji/frameworkless-front-end/tree/master/rendering/TodoMVC-v2)

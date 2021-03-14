@@ -7,6 +7,7 @@
 - 필터링된 todo 리스트를 가진 ui
 - 완료되지 않은 todo 수의 span 
 - selected 클래스를 오른쪽에 추가한 필터 유형을 가진 링크 
+
 ### `view.js` 파일 
 
 뷰 함수는 기본으로 사용되는 타깃 DOM요소를 받는다.  
@@ -27,3 +28,14 @@
 )
 
 <img width="960" alt="static-render" src="https://user-images.githubusercontent.com/71164350/111075342-f75b2b80-852a-11eb-96ff-e6f645901e77.png">
+
+### TodoMVC v1 의 문제점 
+
+여기서의 렌더링 방식은 `window.requestAnimationFrame`와 가상 노드 조작을 통해 충분한 성능을 보여주지만, 뷰 함수는 읽기 힘들다.  
+
+- **하나의 거대한 함수** : 여러 DOM 요소를 조작하는 함수가 단 하나뿐
+- **동일한 작업을 수행하는 여러 방법** : 문자열을 통해 리스트 항목 생성 
+
+이를 바탕으로 뷰를 좀 더 작은 함수로 나누고 일관성 있게 작업해보자. 
+
+[TodoMVC v2 파트로 이동 ...]()

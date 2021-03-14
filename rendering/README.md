@@ -7,13 +7,10 @@
 - 필터링된 todo 리스트를 가진 ui
 - 완료되지 않은 todo 수의 span 
 - selected 클래스를 오른쪽에 추가한 필터 유형을 가진 링크 
-
 ### `view.js` 파일 
 
 뷰 함수는 기본으로 사용되는 타깃 DOM요소를 받는다.  
-
 그 후 원래 노드를 **복제(cloneNode)**하고, **state 매개변수**를 사용해 업데이트하고 새 노드를 반환한다.  
-
 위의 DOM 수정은 어디까지나 가상(virtual)이고, 실제 수정 사항을 반영해주기 위해 컨트롤러를 작성한다.  
 
 
@@ -28,3 +25,5 @@
 [더 자세한 내용 보러가기](
  https://developer.mozilla.org/ko/docs/Web/API/Window/requestAnimationFrame 
 )
+
+<img width="960" alt="static-render" src="https://user-images.githubusercontent.com/71164350/111075342-f75b2b80-852a-11eb-96ff-e6f645901e77.png">

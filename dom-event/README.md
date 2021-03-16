@@ -237,3 +237,5 @@ input.addEventListener(EVENT_NAME, (e) => {
   console.log('handling custom event...', e.detail)
 })
 ```
+
+### 다음은 TodoMVC 앱에 이벤트를 추가해보자

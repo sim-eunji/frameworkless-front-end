@@ -4,5 +4,10 @@
 
 ### 렌더링
 
-[TodoMVC를 통한 렌더링](https://github.com/sim-eunji/frameworkless-front-end/tree/master/rendering)  
+[TodoMVC를 통한 렌더링](https://github.com/sim-eunji/frameworkless-front-end/tree/master/rendering)
+
 [Virtual DOM을 직접 구현해보자](https://github.com/sim-eunji/frameworkless-front-end/tree/master/rendering/VirtualDOM)
+
+### DOM 이벤트 관리
+
+[DOM EVENT API](https://github.com/sim-eunji/frameworkless-front-end/tree/master/dom-event)

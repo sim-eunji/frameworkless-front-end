@@ -15,6 +15,8 @@
 
 <img width="849" alt="button-render" src="https://user-images.githubusercontent.com/71164350/111241074-bef94180-863f-11eb-828f-e8fe0eec4114.png">
 
+## 이벤트 핸들러를 DOM 요소에 연결하는 방법
+
 ### 속성에 핸들러 연결
 
 - `on*` 속성을 사용한다.  
@@ -31,3 +33,5 @@
   위의 방법은 빠르지만, 나쁜 관행으로 치부된다.  
   그 이유는 속성을 사용하면 한번에 하나의 핸들러만 연결할 수 있기 때문에,  
   onclick 핸들러를 덮어쓰면 원래 핸들러는 영원히 손실된다.
+
+### addEventListener로 핸들러 연결

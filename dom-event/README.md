@@ -19,20 +19,20 @@
 
 ### 속성에 핸들러 연결
 
-- `on*` 속성을 사용한다.  
-  모든 이벤트 타입마다 DOM 요소에 해당되는 속성을 가진다.  
-  버튼은 `onclick`, `ondbclick`, `onmouseover`, `onblur`, `onfocus` 속성을 가진다.
+`on*` 속성을 사용한다.  
+모든 이벤트 타입마다 DOM 요소에 해당되는 속성을 가진다.  
+버튼은 `onclick`, `ondbclick`, `onmouseover`, `onblur`, `onfocus` 속성을 가진다.
 
-  ```javascript
-  const button = document.querySelector('button')
-  button.onclick = () => {
-    console.log('Click managed using onclick property! ')
-  }
-  ```
+```javascript
+const button = document.querySelector('button')
+button.onclick = () => {
+  console.log('Click managed using onclick property! ')
+}
+```
 
-  위의 방법은 빠르지만, 나쁜 관행으로 치부된다.  
-  그 이유는 속성을 사용하면 한번에 하나의 핸들러만 연결할 수 있기 때문에,  
-  onclick 핸들러를 덮어쓰면 원래 핸들러는 영원히 손실된다.
+위의 방법은 빠르지만, 나쁜 관행으로 치부된다.  
+ 그 이유는 속성을 사용하면 한번에 하나의 핸들러만 연결할 수 있기 때문에,  
+ onclick 핸들러를 덮어쓰면 원래 핸들러는 영원히 손실된다.
 
 ### addEventListener로 핸들러 연결
 
@@ -73,3 +73,23 @@ window.setTimeout(() => {
 ```
 
 removeEventListener 메서드에 매개변수로 전달할 수 있도록 참조를 유지해야한다.
+
+## 이벤트 객체와 인터페이스
+
+이벤트에는 포인터 좌표, 이벤트 타입, 이벤트 트리거 요소 등 유용한 정보가 많이 들어있다.
+
+```javascript
+const button = document.querySelector('button')
+button.addEventListener('click', (e) => {
+  console.log(`event : ${e}`)
+})
+```
+
+웹 애플리케이션에 전달된 모든 이벤트에는 Event 인터페이스를 구현하는데,  
+타입에 따라 이벤트 객체는 Event 인터페이스를 확장할수 있게 구현할 수 있다.
+
+-> click 이벤트는 MouseEvent 인터페이스를 구현한다.
+
+이 인터페이스에는 이벤트 중 포인터의 좌표나 이동에 대한 정보와 다른 유용한 데이터가 포함되어있다.
+
+<img width="537" alt="event-interface" src="https://user-images.githubusercontent.com/71164350/111243849-15b54a00-8645-11eb-960d-80091629461d.png">

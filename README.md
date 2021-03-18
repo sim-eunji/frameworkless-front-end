@@ -13,3 +13,7 @@
 [DOM EVENT API](https://github.com/sim-eunji/frameworkless-front-end/tree/master/dom-event)
 
 [TodoMVC에 DOM EVENT 추가](https://github.com/sim-eunji/frameworkless-front-end/tree/master/dom-event/TodoMVC)
+
+### 웹 구성요소
+
+[웹 구성요소 API](https://github.com/sim-eunji/frameworkless-front-end/tree/master/web-component)

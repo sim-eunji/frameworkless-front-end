@@ -42,6 +42,8 @@ newDiv.appendChild(newSpan)
       <label> </label>
       <button class="destory"></button>
     </div>
+
+    <input class="edit" />
   </li>
 </template>
 ```
